@@ -1,0 +1,88 @@
+{
+  "info": {
+    "_postman_id": "school-management-multi",
+    "name": "School Management APIs",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Add School - Sunrise International School",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Sunrise International School\",\n  \"address\": \"456 Park Avenue, Pune\",\n  \"latitude\": 18.5204,\n  \"longitude\": 73.8567\n}"
+        },
+        "url": { "raw": "http://localhost:5000/addSchool", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["addSchool"] }
+      },
+      "response": []
+    },
+    {
+      "name": "Add School - Greenfield Academy",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Greenfield Academy\",\n  \"address\": \"789 Lakeside Road, Bangalore\",\n  \"latitude\": 12.9716,\n  \"longitude\": 77.5946\n}"
+        },
+        "url": { "raw": "http://localhost:5000/addSchool", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["addSchool"] }
+      },
+      "response": []
+    },
+    {
+      "name": "Add School - Horizon Public School",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Horizon Public School\",\n  \"address\": \"321 River Street, Delhi\",\n  \"latitude\": 28.6139,\n  \"longitude\": 77.2090\n}"
+        },
+        "url": { "raw": "http://localhost:5000/addSchool", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["addSchool"] }
+      },
+      "response": []
+    },
+    {
+      "name": "Add School - ABC International School",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"ABC International School\",\n  \"address\": \"123 Main Street, Mumbai\",\n  \"latitude\": 19.0760,\n  \"longitude\": 72.8777\n}"
+        },
+        "url": { "raw": "http://localhost:5000/addSchool", "protocol": "http", "host": ["localhost"], "port": "5000", "path": ["addSchool"] }
+      },
+      "response": []
+    },
+    {
+      "name": "List Schools",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/listSchools?latitude=18.53&longitude=73.85",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["listSchools"],
+          "query": [
+            { "key": "latitude", "value": "18.53" },
+            { "key": "longitude", "value": "73.85" }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
